@@ -30,5 +30,3 @@ didYouMean=function(input){
   }
   else(return(gsub("[+]"," ",input)))
 }  
-
-israelis.locations.3=apply()
