@@ -1,6 +1,10 @@
 ##Takes String with errors in it. Returns word after either "Did you mean" or "Showing Results for" from google. If no Errors in String then returns original string.
 ##sam weiss
 
+
+#for windows users you might need: options(RCurlOptions = list(cainfo = system.file("CurlSSL", "cacert.pem", package = "RCurl"))) 
+
+
 library(RCurl)
 didYouMean=function(input){
   input=gsub(" ", "+", input)
